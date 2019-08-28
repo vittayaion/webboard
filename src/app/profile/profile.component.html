@@ -1,0 +1,22 @@
+<div class="wrapper fadeInDown mt-5">
+    <div id="formContent">
+        <div class="text-center mt-5"><i class="fa fa-user-circle-o  fa-5x" style="color: lightsteelblue;" aria-hidden="true"></i></div>
+        
+        <h2>Profile</h2>
+        <div class="fadeIn second text-left ml-5 mt-1">
+            <p>id : {{uid}} </p>
+            <p>email : {{email}} </p>
+            <p>name : {{name}}</p>
+            <p>lastname : {{lastname}}</p>
+        </div>
+
+    
+        <!-- Remind Passowrd -->
+        <div id="formFooter">
+        <a class="underlineHover" [routerLink]="['/dashboard']">
+            กลับไปหน้าเดิม
+        </a>
+        </div>
+    
+    </div>
+</div>

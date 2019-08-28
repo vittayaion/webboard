@@ -1,0 +1,30 @@
+<div class="wrapper fadeInDown mt-5">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <i class="fa fa-sign-in fa-2x" aria-hidden="true"></i>
+    <h2>Login Form</h2>
+    <!-- Icon -->
+    <!-- <div class="fadeIn first">
+        <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
+      </div> -->
+
+    <!-- Login Form -->
+    <form [formGroup]="loginForm" (ngSubmit)="Login()">
+
+        <input formControlName="email" type="email" id="email" class="fadeIn second" name="email" placeholder="Email address">
+
+        <input formControlName="password" type="password" id="password" class="fadeIn third" name="password" placeholder="Password">
+        <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" [routerLink]="['/signup']">
+        สมัครสมาชิกใหม่ ?
+      </a>
+    </div>
+
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div *ngFor="let c of newData; let i = index" >
+    <div *ngIf="c.post_id === paramId" class="card border mb-3">
+        <div class="card-body text-danger">
+            <div *ngIf="c.owner === uid">
+                <button class="float-right btn btn-warning">edit</button>
+                <button (click)="commentService.deleteComment(c.key)" class="float-right btn btn-danger">delete</button>
+            </div>
+            <p class="card-text">คอมเม้น: {{c.comment_text}}</p>
+            <p class="card-text">เวลา: {{c.timestamp}}</p>
+            <p class="card-text">ไอดี: {{c.owner}}</p>
+        </div>
+
+    </div>
+    <!-- {{allData.comment_text}} -->
+</div>
+
+<!-- <p class="card-text">Owner: {{allData.comment_text}}</p> -->
